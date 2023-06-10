@@ -16,27 +16,36 @@ body {
   border-radius: 5px;
   position: relative;
 }
-.top-suit {
+top-suit {
   position: absolute;
   top: 20px;
   left: 20px;
   font-size: 80px;
 }
-.bottom-suit {
+bottom-suit {
   position: absolute;
   bottom: 20px;
   right: 20px;
   font-size: 80px;
 }
-&.spade: before, &.spade:after {
-  content: ;
+&.spade:before,
+.spade:after {
+  content: "♠";
 }
-&.heart: before, &.heart:after {
-  content: ;
+
+&.heart:before,
+.heart:after {
+  content: "♥";
+  color: red;
 }
-&.club: before, &.club:after {
-  content: ;
+
+&.diamond:before,
+.diamond:after {
+  content: "♦";
+  color: red;
 }
-&.diamond: before, &.club:after {
-  content: ;
+
+&.club:before,
+.club:after {
+  content: "♣";
 }
