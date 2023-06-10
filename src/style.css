@@ -1,51 +1,29 @@
-body {
-  background: green;
-  box-sizing: border-box;
-}
-.card {
-  text-align: center;
-  display: inline-block;
-  font-size: 80px;
-  background: white;
-  margin: auto;
+.container {
   height: 200px;
-  width: 250px;
-  padding: 20px;
-  padding-top: 180px;
+  width: 125px;
+  background-color: white;
   border: 1px solid black;
-  border-radius: 5px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  border-radius: 5%;
 }
-top-suit {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  font-size: 80px;
+#number {
+  color: black;
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 45px 0;
 }
-bottom-suit {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  font-size: 80px;
+#top-suit {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 5px;
 }
-&.spade:before,
-.spade:after {
-  content: "♠";
-}
-
-&.heart:before,
-.heart:after {
-  content: "♥";
-  color: red;
-}
-
-&.diamond:before,
-.diamond:after {
-  content: "♦";
-  color: red;
-}
-
-&.club:before,
-.club:after {
-  content: "♣";
+#bottom-suit {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  margin-right: 5px;
 }
