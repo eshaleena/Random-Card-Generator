@@ -11,14 +11,14 @@ window.onload = function() {
 
 let cardGenerator = () => {
   const numbers = ["2", "3", "5", "7", "8"];
-  const suit = ["heart", "diamond", "club", "spade"];
+  const suit = ["♥", "♦", "♣", "♠"];
   let randomSuit = suit[Math.floor(Math.random() * suit.length)];
   let randomNumbers = numbers[Math.floor(Math.random() * numbers.length)];
 
   if (randomSuit == "♥" || randomSuit == "♦") {
     document.querySelector("#top-suit").style.color = "red";
     document.querySelector("#bottom-suit").style.color = "red";
-  } else (randomSuit == "♠" || randomSuit == "♣") {
+  } else {
     document.querySelector("#top-suit").style.color = "black";
     document.querySelector("#bottom-suit").style.color = "black";
   }
