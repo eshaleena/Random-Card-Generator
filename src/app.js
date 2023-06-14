@@ -15,10 +15,10 @@ let cardGenerator = () => {
   let randomSuit = suit[Math.floor(Math.random() * suit.length)];
   let randomNumbers = numbers[Math.floor(Math.random() * numbers.length)];
 
-  if (randomSuit == "heart" || randomSuit == "diamond") {
+  if (randomSuit == "♥" || randomSuit == "♦") {
     document.querySelector("#top-suit").style.color = "red";
     document.querySelector("#bottom-suit").style.color = "red";
-  } else {
+  } else (randomSuit == "♠" || randomSuit == "♣") {
     document.querySelector("#top-suit").style.color = "black";
     document.querySelector("#bottom-suit").style.color = "black";
   }
